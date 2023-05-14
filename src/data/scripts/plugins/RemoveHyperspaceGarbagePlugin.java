@@ -65,11 +65,15 @@ public class RemoveHyperspaceGarbagePlugin extends BaseModPlugin {
 
         if(Global.getSettings().getBoolean("RHSG_removeHostileActivityProgress")) {
             sector = Global.getSector();
-            if (!sector.getListenerManager().hasListenerOfClass(RHSG_Hostility_Remover.class))
+            if (!sector.getListenerManager().hasListenerOfClass(RHSG_Hostility_Remover.class)) {
                 sector.getListenerManager().addListener(new RHSG_Hostility_Remover());
+                log.info("Hostile activity suppressed.");
+            }
         } else {
-            if (sector.getListenerManager().hasListenerOfClass(RHSG_Hostility_Remover.class))
+            if (sector.getListenerManager().hasListenerOfClass(RHSG_Hostility_Remover.class)) {
                 sector.getListenerManager().removeListenerOfClass(RHSG_Hostility_Remover.class);
+                log.info("Hostile activity suppressed.");
+            }
         }
 
     }
