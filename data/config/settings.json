@@ -1,0 +1,5 @@
+{
+  "RHSG_removeSlipstreams": true,
+  "RHSG_removeGhosts": true,
+  "RHSG_removeHostileActivityProgress": true
+}

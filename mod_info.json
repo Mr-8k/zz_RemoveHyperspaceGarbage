@@ -1,11 +1,11 @@
 {
   "id":"ESP_RemoveHyperspaceGarbage",
-  "name":"zz_Remove Hyperspace Garbage",
+  "name":"zz_Remove Hyperspace Garbage Plus",
   "author":"Entity 8000",
   "utility":"true",
-  "version":"1.0.0",
+  "version":"1.1.0",
   "description":"Fucking let me move where I wanna",
-  "gameVersion":"0.95.1a-RC6",
+  "gameVersion":"0.96a-RC69",
   "jars":["jars/ESP_RemoveHyperspaceGarbage.jar"],
   "modPlugin":"data.scripts.plugins.RemoveHyperspaceGarbagePlugin"
 }
