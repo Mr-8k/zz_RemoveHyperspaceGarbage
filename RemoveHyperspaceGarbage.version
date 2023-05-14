@@ -1,6 +1,6 @@
 {
     "masterVersionFile":"https://raw.githubusercontent.com/Mr-8k/zz_RemoveHyperspaceGarbage/master/RemoveHyperspaceGarbage.version",
-    "modName":"Remove Hyperspace Garbage",
+    "modName":"Remove Hyperspace Garbage Plus",
     # The current patch number
     # Notation is major.minor.patch; trailing zeros are ignored
     # This means version 2.1.0 shows up as v2.1, version 4.0.0 as v4, etc
@@ -8,7 +8,7 @@
     "modVersion":
     {
         "major":1,
-        "minor":0,
+        "minor":1,
         "patch":0 # Can be a number, character or string (1, 2, a, b, "-RC2", etc)
     }
 }
