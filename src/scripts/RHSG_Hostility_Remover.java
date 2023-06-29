@@ -1,5 +1,6 @@
 package scripts;
 
+import com.fs.starfarer.api.Global;
 import com.fs.starfarer.api.campaign.*;
 import com.fs.starfarer.api.campaign.econ.MarketAPI;
 import com.fs.starfarer.api.characters.AbilityPlugin;
@@ -105,7 +106,8 @@ public class RHSG_Hostility_Remover implements CampaignEventListener {
 
     @Override
     public void reportEconomyTick(int iterIndex) {
-        HostileActivityEventIntel.get().setProgress(0);
+        if(Global.getSettings().getBoolean("RHSG_removeHostileActivityProgress"))
+            HostileActivityEventIntel.get().setProgress(0);
     }
 
     @Override
